@@ -1,0 +1,16 @@
+{
+  "name": "releasechecklist",
+  "primary_key_column": "id",
+  "enable_rls": false,
+  "visibility": "POD",
+  "columns": [
+    { "name": "issue_id", "type": "TEXT", "required": true, "max_length": 240 },
+    { "name": "tests_required", "type": "BOOLEAN", "required": true, "default": true },
+    { "name": "docs_required", "type": "BOOLEAN", "required": true, "default": true },
+    { "name": "tests_present", "type": "BOOLEAN", "required": false },
+    { "name": "docs_updated", "type": "BOOLEAN", "required": false },
+    { "name": "status", "type": "ENUM", "required": true, "default": "pending",
+      "options": ["pending", "verified", "failed"] }
+  ],
+  "config": {}
+}
