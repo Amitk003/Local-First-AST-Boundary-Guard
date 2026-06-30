@@ -1,0 +1,14 @@
+{
+  "name": "intentartifacts",
+  "primary_key_column": "id",
+  "enable_rls": false,
+  "visibility": "POD",
+  "columns": [
+    { "name": "issue_id", "type": "TEXT", "required": true, "max_length": 240 },
+    { "name": "description", "type": "TEXT", "required": false, "max_length": 2000 },
+    { "name": "allowed_files", "type": "JSON", "required": true },
+    { "name": "status", "type": "ENUM", "required": true, "default": "active",
+      "options": ["active", "completed"] }
+  ],
+  "config": {}
+}

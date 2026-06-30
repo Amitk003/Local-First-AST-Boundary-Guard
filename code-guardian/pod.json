@@ -1,0 +1,5 @@
+{
+  "format_version": 2,
+  "name": "code-guardian",
+  "description": "AI pre-commit guard that checks code changes before git commit. Verifies file scope, tests, docs, and risk."
+}
