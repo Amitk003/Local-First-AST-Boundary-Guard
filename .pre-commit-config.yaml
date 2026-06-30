@@ -1,0 +1,12 @@
+repos:
+  - repo: local
+    hooks:
+      - id: code-guardian
+        name: Code Guardian
+        description: AI pre-commit guard that checks file scope, tests, docs, and risk
+        entry: python -m code_guardian.pre_commit_hook
+        language: python
+        stages: [commit]
+        always_run: true
+        pass_filenames: false
+        require_serial: true
