@@ -1,0 +1,16 @@
+[project]
+name = "code-guardian"
+version = "0.1.0"
+description = "AI assistant that checks code before git commit happens"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pre-commit>=4.0",
+    "tree-sitter>=0.25",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"
